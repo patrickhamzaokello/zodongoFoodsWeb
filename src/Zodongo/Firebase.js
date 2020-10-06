@@ -1,4 +1,5 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import firebase from 'firebase';
+
 const firebaseConfig = {
     apiKey: "AIzaSyDmWPin8oBUnooEuk5HgWaV-kPl2pWs0Hw",
     authDomain: "zodongo-foods.firebaseapp.com",
@@ -9,3 +10,9 @@ const firebaseConfig = {
     appId: "1:284397086378:web:15bad9975f464f8b6952d3",
     measurementId: "G-CJ4L5Y4FVJ"
   };
+
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
+  const database = firebaseApp.firestore();
+
+
+  export default database;
